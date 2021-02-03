@@ -1,0 +1,30 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	controllerName="miniApp2.MiniApplication2.controller.SplitAppPage" xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:sf="sap.ui.layout.form">
+<SplitApp id="idSplit" >
+	
+	<masterPages >
+        <Page title="Employee Names" titleAlignment="Center" showNavButton="true" navButtonPress="onPressBack">
+	<List id="idList" selectionChange="onClickItems" mode="SingleSelectMaster">
+						<items>
+						
+						</items>
+					</List>
+</Page>
+	</masterPages>
+<detailPages>
+	<Page title="Employee Detials" titleAlignment="Center">
+		<sf:SimpleForm id="idsimpleform">
+			<Label text="Employee Name"></Label>
+			<Input value="{EmpName}"></Input>
+				<Label text="Employee Phone Number"></Label>
+			<Input value=" {EmpPhone}"></Input>
+				<Label text="Employee City"></Label>
+			<Input value=" {EmpCity}"></Input>
+				<Label text="Employee Designation"></Label>
+			<Input value=" {EmpDesignation}"></Input>
+		</sf:SimpleForm>
+		</Page>
+</detailPages>
+</SplitApp>
+</mvc:View>

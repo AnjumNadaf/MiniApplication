@@ -1,0 +1,16 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="miniApp2.MiniApplication2.controller.ListPage"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page title="Company List" showNavButton="true" navButtonPress="onPressListPage">
+				<content>
+					<List items="{/Compnay}" selectionChange="onListClick" mode="SingleSelectMaster" id="idList">
+						<items>
+							<ObjectListItem title="{Cname}"></ObjectListItem>
+						</items>
+					</List>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

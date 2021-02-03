@@ -1,0 +1,28 @@
+<mvc:View controllerName="miniApp2.MiniApplication2.controller.LoginPage" xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+xmlns="sap.m" xmlns:sf="sap.ui.layout.form">
+
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+					<sf:SimpleForm editable="true">
+						<VBox alignContent="Center" justifyContent="Center">
+						<HBox alignContent="Center" justifyContent="Center">
+						<Label text="Username" ></Label>
+						<Input id="idUsername"></Input>
+						</HBox>
+						<HBox alignContent="Center" justifyContent="Center">
+						<Label text="Password" ></Label>
+						<Input id="idPassword"></Input>
+						</HBox>
+							<HBox alignContent="Center" justifyContent="Center">
+						<Button text="Login" width="100%" press="onPress"></Button>
+						</HBox>
+						</VBox>
+					</sf:SimpleForm>
+					</content>
+				</Page>
+			</pages>
+		</App>
+
+</mvc:View>
